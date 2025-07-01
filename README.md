@@ -2,6 +2,7 @@
 クリップボードにコピーされた内容の要約（複数行のとき）または概要（一行のとき）をつくる CLI ツール。
 
 ## 前提条件
+- Windows
 - Python 3.11 以上
 - 環境変数 `OPENAI_API_KEY` に OpenAI API キーを設定すること
 
@@ -28,6 +29,10 @@ python aism.py --input (要約プロンプトファイル名).md
 ```
 
 すると、一時ディレクトリ（`%TEMP%`）に `aismXXX.md`（XXXは英数字3文字）が生成され、自動的に関連付けアプリで開かれます。
+
+## 開発者向け
+- Cline を使っています
+- .clinerules/01-specification.md に仕様を書いた後、Cline に読ませてコードをつくってもらいます
 
 ## ライセンス
 MIT
