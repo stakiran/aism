@@ -68,4 +68,7 @@ def request_to_model(model_name, prompt, timeout=130):
 ```
 
 ## 出力ファイル名
-`aismXXX.md` としてください。`XXX` は `[a-zA-Z0-9]` から成るランダム文字列にしてください。
+- `aismXXX.md` としてください。
+    - `XXX` は `[a-zA-Z0-9]` から成るランダム文字列にしてください
+    - また文字数は 3 文字固定です
+- このファイルは `%temp%` に出力してください
