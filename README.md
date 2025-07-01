@@ -1,2 +1,33 @@
 # aism
-AI Summarizer
+クリップボードにコピーされた内容の要約（複数行のとき）または概要（一行のとき）をつくる CLI ツール。
+
+## 前提条件
+- Python 3.11 以上
+- 環境変数 `OPENAI_API_KEY` に OpenAI API キーを設定すること
+
+## インストール
+```bash
+git clone https://github.com/stakiran_sub/aism.git
+cd aism
+pip install pyperclip openai
+```
+
+`requirements.txt` はありません
+
+## 使い方
+
+### 1: 要約プロンプトファイルをつくります
+詳細は .clinerules/01-specification.md を見てください
+
+### 2: クリップボードに要約対象をコピー
+
+### 3: aism 実行
+
+```bash
+python aism.py --input (要約プロンプトファイル名).md
+```
+
+すると、一時ディレクトリ（`%TEMP%`）に `aismXXX.md`（XXXは英数字3文字）が生成され、自動的に関連付けアプリで開かれます。
+
+## ライセンス
+MIT
