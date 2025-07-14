@@ -3,7 +3,7 @@
 
 ## 前提条件
 - Windows
-- Python 3.11 以上
+- Python 3.12 以上
 - 環境変数 `OPENAI_API_KEY` に OpenAI API キーを設定すること
 
 ## インストール
@@ -13,7 +13,15 @@ cd aism
 pip install pyperclip openai
 ```
 
-`requirements.txt` はありません
+requirements 参考:
+
+```
+$ pip freeze | grep -i openai
+openai==1.95.0
+
+$ pip freeze | grep -i pyperclip
+pyperclip==1.9.0
+```
 
 ## 使い方
 
